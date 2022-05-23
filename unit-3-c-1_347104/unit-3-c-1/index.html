@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #navbar+div{
+         /* border: 1px solid red; */
+         width: 30%;
+         margin-top: 90px;
+         margin: auto;
+         margin-top: 30px;
+      }
+      form>input{
+        display: block;
+        width: 60%;
+        margin-top: 10px;
+      }
+      #navbar{
+        border: 1px solid red;
+        width: 100%;
+        background-color: red;
+        height: 70px;
+
+      }
+      #show_products{
+        margin-top: 20px;
+        width: 10%;
+        height: 20px;
+        background-color: aqua;
+       
+      }
+      a{
+        text-decoration: none;
+      }
+      #add_product{
+        margin-top: 10px;
+        width: 63%;
+      }
+      /* #show_products{
+
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <button id="show_products"><a href="inventory.html">Show Products</a></button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+       <form id="products" onsubmit="addfunction(event)">
+             
+        <input placeholder="Type" id="type" type="text">
+        <input placeholder="Description" id="desc" type="text">
+        <input placeholder="Price" id="price" type="number">
+        <input placeholder="image url" id="image" type="url">
+        <button type="submit" id="add_product">Add Product</button>
+
+       </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
